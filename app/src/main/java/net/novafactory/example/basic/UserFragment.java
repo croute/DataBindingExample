@@ -23,7 +23,7 @@ public class UserFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        user = new User(ContextCompat.getDrawable(getActivity(), R.drawable.iu), "IU", null);
+        user = new User(ContextCompat.getDrawable(getActivity(), R.drawable.iu), "IU", "아이유");
     }
 
     @Nullable

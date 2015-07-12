@@ -12,4 +12,5 @@
     <string name="shuffle">섞기</string>
     <string name="recycler_view">RecyclerView</string>
     <string name="recycler_view_data_binding">RecyclerView DataBinding</string>
+    <string name="image">Image</string>
 </resources>

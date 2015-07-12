@@ -42,4 +42,10 @@
         android:text="@string/recycler_view_data_binding"
         android:onClick="onClickRecyclerViewDataBinding"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/image"
+        android:onClick="onClickImage"/>
+
 </LinearLayout>

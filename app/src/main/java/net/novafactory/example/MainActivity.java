@@ -9,6 +9,7 @@ import android.view.View;
 
 import net.novafactory.example.basic.UserFragment;
 import net.novafactory.example.collection.ObservableCollectionFragment;
+import net.novafactory.example.image.ImageFragment;
 import net.novafactory.example.list.RecyclerViewDataBindingFragment;
 import net.novafactory.example.list.RecyclerViewFragment;
 import net.novafactory.example.observable.ObservableFieldsUserFragment;
@@ -31,35 +32,39 @@ public class MainActivity extends AppCompatActivity {
         ft.commit();
     }
 
-    public void replaceFragmentWithStack(Fragment fragment) {
+    public void replaceFragmentWithStack(Fragment fragment, String tag) {
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
-        ft.replace(R.id.activity_main_container, fragment, fragment.getClass().getSimpleName());
-        ft.addToBackStack(fragment.getClass().getSimpleName());
+        ft.replace(R.id.activity_main_container, fragment, tag);
+        ft.addToBackStack(tag);
         ft.commit();
     }
 
     public void onClickBasic(View view) {
-        replaceFragmentWithStack(new UserFragment());
+        replaceFragmentWithStack(new UserFragment(), "Basic");
     }
 
     public void onClickObservable(View view) {
-        replaceFragmentWithStack(new ObservableUserFragment());
+        replaceFragmentWithStack(new ObservableUserFragment(), "Observable");
     }
 
     public void onClickObservableFields(View view) {
-        replaceFragmentWithStack(new ObservableFieldsUserFragment());
+        replaceFragmentWithStack(new ObservableFieldsUserFragment(), "ObservableFields");
     }
 
     public void onClickObservableCollection(View view) {
-        replaceFragmentWithStack(new ObservableCollectionFragment());
+        replaceFragmentWithStack(new ObservableCollectionFragment(), "ObservableCollection");
     }
 
     public void onClickRecyclerView(View view) {
-        replaceFragmentWithStack(new RecyclerViewFragment());
+        replaceFragmentWithStack(new RecyclerViewFragment(), "RecyclerView");
     }
 
     public void onClickRecyclerViewDataBinding(View view) {
-        replaceFragmentWithStack(new RecyclerViewDataBindingFragment());
+        replaceFragmentWithStack(new RecyclerViewDataBindingFragment(), "RecyclerViewDataBinding");
+    }
+
+    public void onClickImage(View view) {
+        replaceFragmentWithStack(new ImageFragment(), "Image");
     }
 }

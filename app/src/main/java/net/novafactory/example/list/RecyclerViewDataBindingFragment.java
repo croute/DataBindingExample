@@ -34,7 +34,7 @@ public class RecyclerViewDataBindingFragment extends Fragment {
         list.add(new ObservableUser(ContextCompat.getDrawable(getActivity(), R.drawable.iu_album), "IU", "마음"));
         list.add(new ObservableUser(ContextCompat.getDrawable(getActivity(), R.drawable.iu_album), null, "마음"));
         list.add(new ObservableUser(ContextCompat.getDrawable(getActivity(), R.drawable.iu_producer), "IU Producer", "씐디"));
-        list.add(new ObservableUser(ContextCompat.getDrawable(getActivity(), R.drawable.iu_producer), "IU", null));
+        list.add(new ObservableUser(ContextCompat.getDrawable(getActivity(), R.drawable.iu_producer), "IU Producer", null));
     }
 
     @Nullable
