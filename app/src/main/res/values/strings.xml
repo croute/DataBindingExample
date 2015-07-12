@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">DataBindingExample</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="basic">Basic</string>
+    <string name="observable">Observable</string>
+    <string name="observable_fields">Observable Fields</string>
+    <string name="observable_collection">Observable Collection</string>
+    <string name="change">데이터 바꾸기</string>
+    <string name="change_again">다시 바꾸기</string>
+    <string name="shuffle">섞기</string>
+    <string name="recycler_view">RecyclerView</string>
+    <string name="recycler_view_data_binding">RecyclerView DataBinding</string>
+</resources>

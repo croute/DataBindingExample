@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable name="user" type="net.novafactory.example.basic.User" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/user_iv_profile"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@{user.profile}"/>
+
+        <TextView
+            android:id="@+id/user_tv_first_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/user_iv_profile"
+            android:layout_toEndOf="@id/user_iv_profile"
+            android:text="@{user.firstName}" />
+
+        <TextView
+            android:id="@+id/user_tv_last_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/user_iv_profile"
+            android:layout_toRightOf="@id/user_iv_profile"
+            android:layout_below="@id/user_tv_first_name"
+            android:text="@{user.lastName}" />
+    </RelativeLayout>
+</layout>
