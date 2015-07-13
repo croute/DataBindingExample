@@ -1,3 +1,13 @@
 # Android Data Binding example #
 
-* [presentation dropbox link](https://www.dropbox.com/s/e8h9eu12hvn72da/Databinding.key?dl=0)
+### Presentation file ###
+
+##### keynote #####
+
+* `root/Databinding.key`
+* [File link](https://github.com/croute/DataBindingExample/blob/master/Databinding.key?raw=true)
+
+##### pdf #####
+
+* `root/Databinding.pdf`
+* [File link](https://github.com/croute/DataBindingExample/blob/master/Databinding.pdf)
